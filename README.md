@@ -1,2 +1,2 @@
 # personal-reading-logs
-This helps me keeptrack of books and academic papers I've read.
+This helps me keep track of books and academic papers I've read.
