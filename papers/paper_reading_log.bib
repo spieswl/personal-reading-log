@@ -1,0 +1,631 @@
+% Encoding: UTF-8
+
+
+@Article{Adkins.2016,
+  Title                    = {Monoxalyze: Verifying Smoking Cessation with a Keychain-sized Carbon Monoxide Breathalyzer},
+  Author                   = {Adkins, Joshua and Dutta, Prabal},
+  Journal                  = {Ann Arbor},
+  Year                     = {2016},
+  Number                   = {48019},
+  Volume                   = {1001},
+
+  Abstract                 = {We present Monoxalyze, a keychain-sized, Bluetooth-based, carbon monoxide breathalyzer that aims to enable mobile, scalable smoking cessation intervention programs. These intervention programs have been shown to greatly increase the rate of a quit attempt, which in turn decreases the rate of smoking, a major public health problem that still affects over one billion people around the world. Currently, intervention programs verify cessation compliance by requiring program participants to periodically visit clinics and exhale through large, expensive carbon monoxide breathalyzers—a practice that cannot scale to one billion smokers. Monoxalyze enables mobile cessation verification by working with a user’s smartphone to establish a ring of spatio-temporal transitive trust between the Monoxalyze device, the user, and the smartphone, a concept that can be applied to many third-party monitoring applications. In Monoxalyze, the links of this trust are represented by simultaneous exhalation verification, facial recognition, and device-to-phone visible light authentication. In our evaluation, we show that Monoxalyze lasts over 80 days between charges, and has the ability to verify a Monoxalyze user. With a small user study we show that Monoxalyze determines smoking cessation with 92% accuracy, a level comparable with commercial CO breathalyzers. Further contributions describe the design decisions behind creating a low-power BLE device.},
+  Keywords                 = {IoT, embedded systems, data collection, smoking cessation, technical whitepaper},
+  Owner                    = {wspies},
+  Timestamp                = {2018.01.21}
+}
+
+@Proceedings{Balaji.2013,
+  Title                    = {Sentinel: Occupancy Based HVAC Actuation using Existing WiFi Infrastructure within Commercial Buildings},
+  Year                     = {2013},
+  Month                    = {November},
+  Organization             = {ACM},
+
+  Abstract                 = {Commercial buildings contribute to 19% of the primary energy consumption in the US, with HVAC systems accounting for 39.6% of this usage. To reduce HVAC energy use, prior studies have proposed using wireless occupancy sensors or even cameras for occupancy based actuation showing energy savings of up to 42%. However, most of these solutions require these sensors and the associated network to be designed, deployed, tested and maintained within existing buildings which is significantly costly.
+
+We present Sentinel, a system that leverages existing WiFi infrastructure in commercial buildings along with smartphones with WiFi connectivity carried by building occupants to provide fine-grained occupancy based HVAC actuation. We have implemented Sentinel on top of RESTful web services, and demonstrate that it is scalable and compatible with legacy building management. We show that Sentinel accurately determines the occupancy in office spaces 86% of the time, with 6.2% false negative errors. We highlight the reasons for the inaccuracies, mostly attributed to aggressive power management by smartphones. Finally, we actuate 23% of the HVAC zones within a commercial building using Sentinel for one day and measure HVAC electrical energy savings of 17.8%.},
+  Author                   = {Balaji, Bharathan and Xu, Jian and Nwokafor, Anthony and Gupta, Rajesh and Agarwal, Yuvraj},
+  Journal                  = {Proceedings of the 11th ACM Conference on Embedded Networked Sensor Systems},
+  Keywords                 = {IoT, embedded systems, wireless controls, HVAC control, technical whitepaper},
+  Owner                    = {wspies},
+  Pages                    = {17--31},
+  Timestamp                = {2018.01.16}
+}
+
+@Proceedings{Balasubramanian.2009,
+  Title                    = {Energy consumption in mobile phones: a measurement study and implications for network applications},
+  Year                     = {2009},
+  Organization             = {ACM},
+
+  Abstract                 = {In this paper, we present a measurement study of the energy consumption characteristics of three widespread mobile networking technologies: 3G, GSM, and WiFi. We find that 3G and GSM incur a high tail energy overhead because of lingering in high power states after completing a transfer. Based on these measurements, we develop a model for the energy consumed by network activity for each technology. Using this model, we develop TailEnder, a protocol that reduces energy consumption of common mobile applications. For applications that can tolerate a small delay such as e-mail, TailEnder schedules transfers so as to minimize the cumulative energy consumed while meeting user-specified deadlines. We show that the TailEnder scheduling algorithm is within a factor 2× of the optimal and show that any online algorithm can at best be within a factor 1.62× of the optimal. For applications like web search that can benefit from prefetching, TailEnder aggressively prefetches several times more data and improves user-specified response times while consuming less energy. We evaluate the benefits of TailEnder for three different case study applications—email, news feeds, and web search—based on real user logs and show significant reduction in energy consumption in each case. Experiments conducted on the mobile phone show that TailEnder can download 60% more news feed updates and download search results for more than 50% of web queries, compared to using the default policy.},
+  Author                   = {Balasubramanian, Niranjan and Balasubramanian, Aruna and Venkataramani, Arun},
+  Journal                  = {Proceedings of the 9th ACM SIGCOMM Conference on Internet Measurement},
+  Owner                    = {wspies},
+  Pages                    = {280--293},
+  Timestamp                = {2018.01.31}
+}
+
+@InProceedings{Bigham.2010,
+  author    = {Bigham, Jeffrey P. and Jayant, Chandrika and Ji, Hanjie and Little, Greg and Miller, Andrew and Miller, Robert C. and Miller, Robin and Tatarowicz, Aubrey and White, Brandyn and White, Samual and et al.},
+  title     = {VizWiz: Nearly Real-Time Answers to Visual Questions},
+  booktitle = {Proceedings of the 23nd Annual ACM Symposium on User Interface Software and Technology},
+  year      = {2010},
+  pages     = {333–342},
+  address   = {New York, NY, USA},
+  publisher = {Association for Computing Machinery},
+  abstract  = {The lack of access to visual information like text labels, icons, and colors can cause frustration and decrease independence for blind people. Current access technology uses automatic approaches to address some problems in this space, but the technology is error-prone, limited in scope, and quite expensive. In this paper, we introduce VizWiz, a talking application for mobile phones that offers a new alternative to answering visual questions in nearly real-time—asking multiple people on the web. To support answering questions quickly, we introduce a general approach for intelligently recruiting human workers in advance called quikTurkit so that workers are available when new questions arrive. A field deployment with 11 blind participants illustrates that blind people can effectively use VizWiz to cheaply answer questions in their everyday lives, highlighting issues that automatic approaches will need to address to be useful. Finally, we illustrate the potential of using VizWiz as part of the participatory design of advanced tools by using it to build and evaluate VizWiz::LocateIt, an interactive mobile tool that helps blind people solve general visual search problems.},
+  doi       = {10.1145/1866029.1866080},
+  isbn      = {9781450302715},
+  journal   = {Proceedings of the 23nd annual ACM symposium on User interface software and technology},
+  numpages  = {10},
+  owner     = {wspies},
+  timestamp = {2018.03.05},
+  url       = {https://doi.org/10.1145/1866029.1866080},
+}
+
+@Proceedings{Bregu.2016,
+  Title                    = {Reactive control of autonomous drones},
+  Year                     = {2016},
+  Organization             = {ACM},
+
+  Abstract                 = {Aerial drones, ground robots, and aquatic rovers enable mobile applications that no other technology can realize with comparable flexibility and costs. In existing platforms, the low-level control enabling a drone’s autonomous movement is currently realized in a time-triggered fashion, which simplifies implementations. In contrast, we conceive a notion of reactive control that supersedes the time-triggered approach by leveraging the characteristics of existing control logic and of the hardware it runs on. Using reactive control, control decisions are taken only upon recognizing the need to, based on observed changes in the navigation sensors. As a result, the rate of execution dynamically adapts to the circumstances. Compared to time-triggered control, this allows us to: i) attain more timely control decisions, ii) improve hardware utilization, iii) lessen the need to overprovision control rates. Based on 260+ hours of real-world experiments using three aerial drones, three different control logic, and three hardware platforms, we demonstrate, for example, up to 41% improvements in control accuracy and up to 22% improvements in flight time.},
+  Author                   = {Bregu, Endri and Casamassima, Nicola and Cantoni, Daniel and Mottola, Luca and Whitehouse, Kamin},
+  Journal                  = {Proceedings of the 14th Annual International Conference on Mobile Systems, Applications, and Services},
+  Keywords                 = {IoT, autonomous vehicles, embedded systems, controls, technical whitepaper},
+  Owner                    = {wspies},
+  Pages                    = {207--219},
+  Timestamp                = {2018.01.24}
+}
+
+@Proceedings{Buettner.2008,
+  Title                    = {Revisiting smart dust with RFID sensor networks},
+  Year                     = {2008},
+  Month                    = {October},
+  Organization             = {ACM},
+
+  Abstract                 = {We argue that sensing and computation platforms that leverage RFID technology can realize “smart-dust” applications that have eluded the sensor network community. RFID sensor networks (RSNs), which consist of RFID readers and RFID sensor nodes (WISPs), extend RFID to include sensing and bring the advantages of small, inexpensive and long-lived RFID tags to wireless sensor networks. We describe sample applications suited to the space between existing sensor networks and RFID. We highlight the research challenges in realizing RSNs such as the use of intermittent power and RFID protocols suited to sensor queries.},
+  Author                   = {Buettner, Michael and Greenstein, Ben and Sample, Alanson and Smith, Joshua R and Wetherall, David and others},
+  Journal                  = {Proceedings of the 7th ACM Workshop on Hot Topics in Networks (HotNets-VII)},
+  Keywords                 = {IoT, embedded systems, wireless sensing, RFID, ultra-low power, technical whitepaper},
+  Owner                    = {wspies},
+  Timestamp                = {2018.01.29}
+}
+
+@Article{Colin.2016,
+  Title                    = {Chain: Tasks and Channels for Reliable Intermittent Programs},
+  Author                   = {Colin, Alexei and Lucia, Brandon},
+  Journal                  = {ACM SIGPLAN Notices},
+  Year                     = {2016},
+  Number                   = {10},
+  Pages                    = {514--530},
+  Volume                   = {51},
+
+  Abstract                 = {Energy harvesting computers enable general-purpose computing using energy collected from their environment. Energy-autonomy of such devices has great potential, but their intermittent power supply poses a challenge. Intermittent program execution compromises progress and leaves state inconsistent. This work describes Chain: a new model for programming intermittent devices.
+
+A Chain program is a set of programmer-defined tasks that compute and exchange data through channels. Chain guarantees forward progress at task granularity. A task is restartable and never sees inconsistent state, because its input and output channels are separated. Our system supports language features for expressing advanced data exchange patterns and for encapsulating reusable functionality.
+
+Chain fundamentally differs from state-of-the-art checkpointing approaches and does not incur the associated overhead. We implement Chain as C language extensions and a runtime library. We used Chain to implement four applications: machine learning, encryption, compression, and sensing. In experiments, Chain ensured consistency where prior approaches failed and improved throughput by 2-7x over the leading state-of-the-art system.},
+  Owner                    = {wspies},
+  Publisher                = {ACM},
+  Timestamp                = {2018.02.14}
+}
+
+@Proceedings{DeBruin.2015,
+  Title                    = {PowerBlade: A Low-Profile, True-Power, Plug-Through Energy Meter},
+  Year                     = {2015},
+  Month                    = {November},
+  Organization             = {ACM},
+
+  Abstract                 = {We present PowerBlade, the smallest, lowest cost, and lowest power AC plug-load meter that measures real, reactive and apparent power, and reports this data, along with cumulative energy consumption, over an industry-standard Bluetooth Low Energy radio. Achieving this design point requires revisiting every aspect of conventional power meters: a new method of acquiring voltage; a non-invasive, planar method of current measurement; an efficient and accurate method of computing power from the voltage and current channels; a radio interface that leverages nearby smart phones to display data and report it to the cloud; and a retro power supply re-imagined with vastly lower current draw, allowing extreme miniaturization. PowerBlade occupies a mere 1" × 1" footprint, offers a 1 / 16 " profile, draws less than 180 mW itself, offers 1.13% error on unity power factor loads in the 2-1200 W range and slightly worse for non-linear and reactive loads, and costs $11 in modest quantities of about 1,000 units. This new design point enables affordable large-scale studies of plug-load energy usage—an area of growing national importance.},
+  Author                   = {DeBruin, Samuel and Ghena, Branden and Kuo, Ye-Sheng and Dutta, Prabal},
+  Journal                  = {Proceedings of the 13th ACM Conference on Embedded Networked Sensor Systems},
+  Keywords                 = {IoT, embedded systems, power monitoring, utilities, technical whitepaper},
+  Owner                    = {wspies},
+  Pages                    = {17--29},
+  Timestamp                = {2018.01.16}
+}
+
+@Article{Engel.2018,
+  Title                    = {Direct Sparse Odometry},
+  Author                   = {J. Engel and V. Koltun and D. Cremers},
+  Journal                  = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  Year                     = {2018},
+
+  Month                    = {March},
+
+  Abstract                 = {DSO is a novel direct and sparse formulation for Visual Odometry. It combines a fully direct probabilistic model (minimizing a photometric error) with consistent, joint optimization of all model parameters, including geometry - represented as inverse depth in a reference frame - and camera motion. This is achieved in real time by omitting the smoothness prior used in other direct methods and instead sampling pixels evenly throughout the images. DSO does not depend on keypoint detectors or descriptors, thus it can naturally sample pixels from across all image regions that have intensity gradient, including edges or smooth intensity variations on mostly white walls. The proposed model integrates a full photometric calibration, accounting for exposure time, lens vignetting, and non-linear response functions. We thoroughly evaluate our method on three different datasets comprising several hours of video. The experiments show that the presented approach significantly outperforms state-of-the-art direct and indirect methods in a variety of real-world settings, both in terms of tracking accuracy and robustness.},
+  Keywords                 = {monocular odometry, dso, slam, computer vision},
+  Owner                    = {wspies},
+  Paperurl                 = {https://vision.in.tum.de/_media/spezial/bib/engel_et_al_pami2018.pdf},
+  Timestamp                = {2018.03.23},
+  Url                      = {https://vision.in.tum.de/research/vslam/dso}
+}
+
+@Article{Everding.2012,
+  Title                    = {Assessment of Transfemoral Amputees using C-Leg and Power Knee for Ascending and Descending Inclines and Steps},
+  Author                   = {Everding, Vanessa Q. and Czerniecki, Joseph M. and Gambel, Jeffrey M.},
+  Journal                  = {Journal of rehabilitation research and development},
+  Year                     = {2012},
+  Number                   = {6},
+  Pages                    = {831--842},
+  Volume                   = {49},
+
+  Abstract                 = {Adding active power to a prosthetic knee unit may improve function and reduce the potential for overuse injuries in persons with transfemoral amputation (TFA). Servicemembers who have sustained a TFA are often young and motivated to perform at high functional levels. The goal of this article is to compare the biomechanics of ramp and stair descent and ascent for participants using the C-Leg and the Power Knee (PK). Subjects were asked to ascend and descend an instrumented staircase and 12 degree ramp at their comfortable pace
+while equipped with retroreflective markers. Temporal-spatial and kinetic data were collected. Knee power generated by the nondisabled limb during stair ascent for subjects wearing the C-Leg was significantly greater than for those wearing the PK. Knee power generated by prosthetic knee units was significantly greater for subjects while wearing the PK. Although the PK reduced the power required from the nondisabled knee during stair climbing, it does not appear to be superior to the C-Leg for other tasks. Adding power to a prosthetic knee may reduce wear on the nondisabled limb; however, there are still limitations that require improvement.},
+  Owner                    = {wspies},
+  Publisher                = {Superintendent of Documents},
+  Timestamp                = {2018.04.24}
+}
+
+@InProceedings{Fang.2017,
+  Title                    = {DeepASL: Enabling Ubiquitous and Non-Intrusive Word and Sentence-Level Sign Language Translation},
+  Author                   = {Fang, Biyi and Co, Jillian and Zhang, Mi},
+  Year                     = {2017},
+  Organization             = {ACM},
+  Pages                    = {5},
+
+  Abstract                 = {There is an undeniable communication barrier between deaf people and people with normal hearing ability. Although innovations in sign language translation technology aim to tear down this communication barrier, the majority of existing sign language translation systems are either intrusive or constrained by resolution or ambient lighting conditions. Moreover, these existing systems can only perform single-sign ASL translation rather than sentence-level translation, making them much less useful in daily-life communication scenarios. In this work, we fill this critical gap by presenting DeepASL, a transformative deep learning-based sign language translation technology that enables ubiquitous and non-intrusive American Sign Language (ASL) translation at both word and sentence levels. DeepASL uses infrared light as its sensing mechanism to non-intrusively capture the ASL signs. It incorporates a novel hierarchical bidirectional deep recurrent neural network (HB-RNN) and a probabilistic framework based on Connectionist Temporal Classification (CTC) for word-level and sentence-level ASL translation respectively. To evaluate its performance, we have collected 7, 306 samples from 11 participants, covering 56 commonly used
+ASL words and 100 ASL sentences. DeepASL achieves an average 94.5% word-level translation accuracy and an average 8.2% word error rate on translating unseen ASL sentences. Given its promising performance, we believe DeepASL represents a significant step towards breaking the communication barrier between deaf people and hearing majority, and thus has the significant potential to fundamentally change deaf people’s lives.},
+  Journal                  = {Proceedings of the 15th ACM Conference on Embedded Network Sensor Systems},
+  Owner                    = {wspies},
+  Timestamp                = {2018.03.07}
+}
+
+@Article{Ferris.2012,
+  Title                    = {Evaluation of a Powered Ankle-foot Prosthetic System during Walking},
+  Author                   = {Ferris, Abbie E and Aldridge, Jennifer M and R{\'a}bago, Christopher A and Wilken, Jason M},
+  Journal                  = {Archives of Physical Medicine and Rehabilitation},
+  Year                     = {2012},
+  Number                   = {11},
+  Pages                    = {1911--1918},
+  Volume                   = {93},
+
+  Owner                    = {wspies},
+  Publisher                = {Elsevier},
+  Timestamp                = {2018.04.16}
+}
+
+@InProceedings{Gollakota.2011,
+  Title                    = {They can hear your heartbeats: non-invasive security for implantable medical devices},
+  Author                   = {Gollakota, Shyamnath and Hassanieh, Haitham and Ransford, Benjamin and Katabi, Dina and Fu, Kevin},
+  Year                     = {2011},
+  Number                   = {4},
+  Organization             = {ACM},
+  Pages                    = {2--13},
+  Volume                   = {41},
+
+  Abstract                 = {Wireless communication has become an intrinsic part of modern implantable medical devices (IMDs). Recent work, however, has demonstrated that wireless connectivity can be exploited to compromise the confidentiality of IMDs’ transmitted data or to send unauthorized commands to IMDs—even commands that cause the device to deliver an electric shock to the patient. The key challenge in addressing these attacks stems from the difficulty of modifying or replacing already-implanted IMDs. Thus, in this paper, we explore the feasibility of protecting an implantable device from such attacks without modifying the device itself. We present a physical-layer solution that delegates the security of an IMD to a personal base station called the shield. The shield uses a novel radio design that can act as a jammer-cum-receiver. This design allows it to jam the IMD’s messages, preventing others from decoding them while being able to decode them itself. It also allows the shield to jam unauthorized commands—even those that try to alter the shield’s own transmissions. We implement our design in a software radio and evaluate it with commercial IMDs. We find that it effectively provides confidentiality for private data and protects the IMD from unauthorized commands.},
+  Journal                  = {ACM SIGCOMM Computer Communication Review},
+  Owner                    = {wspies},
+  Timestamp                = {2018.02.18}
+}
+
+@Proceedings{Gorlatova.2014,
+  Title                    = {Movers and shakers: Kinetic energy harvesting for the internet of things},
+  Year                     = {2014},
+  Number                   = {1},
+  Organization             = {ACM},
+  Volume                   = {42},
+
+  Abstract                 = {Numerous energy harvesting wireless devices that will serve as building blocks for the Internet of Things (IoT) are currently under development. However, there is still only limited understanding of the properties of various energy sources and their impact on energy harvesting adaptive algorithms. Hence, we focus on characterizing the kinetic (motion) energy that can be harvested by a wireless node with an IoT form factor and on developing energy allocation algorithms for such nodes. In this paper, we describe methods for estimating harvested energy from acceleration traces. To characterize the energy availability associated with specific human activities (e.g., relaxing, walking, cycling), we analyze a motion dataset with over 40 participants. Based on
+acceleration measurements that we collected for over 200 hours, we study energy generation processes associated with
+day-long human routines. We also briefly summarize our experiments with moving objects. We develop energy allocation algorithms that take into account practical IoT node design considerations, and evaluate the algorithms using the
+collected measurements. Our observations provide insights into the design of motion energy harvesters, IoT nodes, and
+energy harvesting adaptive algorithms.},
+  Author                   = {Gorlatova, Maria and Sarik, John and Grebla, Guy and Cong, Mina and Kymissis, Ioannis and Zussman, Gil},
+  Journal                  = {ACM SIGMETRICS Performance Evaluation Review},
+  Owner                    = {wspies},
+  Pages                    = {407--419},
+  Timestamp                = {2018.02.04}
+}
+
+@Proceedings{han.2005,
+  Title                    = {A dynamic operating system for sensor nodes},
+  Year                     = {2005},
+  Organization             = {ACM},
+
+  Abstract                 = {Sensor network nodes exhibit characteristics of both embedded systems and general-purpose systems. They must use little energy and be robust to environmental conditions, while also providing common services that make it easy to write applications. In TinyOS, the current state of the art in sensor node operating systems, reusable components implement common services, but each node runs a single statically-linked system image, making it hard to run multiple applications or incrementally update applications. We present SOS, a new operating system for mote-class sensor nodes that takes a more dynamic point on the design spectrum. SOS consists of dynamically-loaded modules and a common kernel, which implements messaging, dynamic memory, and module loading and unloading, among other services. Modules are not processes: they are scheduled cooperatively and there is no memory protection. Nevertheless, the system protects against common module bugs using techniques such as typed entry points, watchdog timers, and primitive resource garbage collection. Individual modules can be added and removed with minimal system interruption. We describe SOS’s design and implementation, discuss
+tradeoffs, and compare it with TinyOS and with the Maté virtual machine. Our evaluation shows that despite the dynamic nature of SOS and its higher-level kernel interface, its long term total usage nearly identical to that of systems such as Matè and TinyOS.},
+  Author                   = {Han, Chih-Chieh and Kumar, Ram and Shea, Roy and Kohler, Eddie and Srivastava, Mani},
+  Journal                  = {Proceedings of the 3rd international conference on Mobile systems, applications, and services},
+  Owner                    = {wspies},
+  Pages                    = {163--176},
+  Timestamp                = {2018.02.07}
+}
+
+@Article{Herr.2012,
+  Title                    = {Bionic Ankle-Foot Prosthesis Normalizes Walking Gait for Persons with Leg Amputation},
+  Author                   = {Herr, Hugh M and Grabowski, Alena M},
+  Journal                  = {Proc. R. Soc. B},
+  Year                     = {2012},
+  Number                   = {1728},
+  Pages                    = {457--464},
+  Volume                   = {279},
+
+  Owner                    = {wspies},
+  Publisher                = {The Royal Society},
+  Timestamp                = {2018.04.16}
+}
+
+@Proceedings{Hester.2016,
+  Title                    = {Amulet: An Energy-Efficient, Multi-Application Wearable Platform},
+  Year                     = {2016},
+  Month                    = {November},
+  Organization             = {ACM},
+
+  Abstract                 = {Wearable technology enables a range of exciting new applications in health, commerce, and beyond. For many important applications, wearables must have battery life measured in weeks or months, not hours and days as in most current devices. Our vision of wearable platforms aims for long battery life but with the flexibility and security to support multiple applications. To achieve long battery life with a workload comprising apps from multiple developers, these platforms must have robust mechanisms for app isolation and developer tools for optimizing resource usage.
+
+We introduce the Amulet Platform for constrained wearable devices, which includes an ultra-low-power hardware architecture and a companion software framework, including a highly efficient event-driven programming model, low-power operating system, and developer tools for profiling ultra-low-power applications at compile time. We present the design and evaluation of our prototype Amulet hardware and software, and show how the framework enables developers to write energy-efficient applications. Our prototype has battery lifetime lasting weeks or even months, depending on the application, and our interactive resource-profiling tool predicts battery lifetime within 6–10% of the measured lifetime.},
+  Author                   = {Hester, Josiah and Peters, Travis and Yun, Tianlong and Peterson, Ronald and Skinner, Joseph and Golla, Bhargav and Storer, Kevin and Hearndon, Steven and Freeman, Kevin and Lord, Sarah and Halter, Ryan and Kotz, David and Sorber, Jacob},
+  Journal                  = {Proceedings of the 14th ACM Conference on Embedded Network Sensor Systems},
+  Keywords                 = {IoT, embedded systems, low-power devices, software package, technical whitepaper},
+  Owner                    = {wspies},
+  Pages                    = {216--229},
+  Timestamp                = {2018.01.21}
+}
+
+@Proceedings{Hester.2005,
+  Title                    = {Tragedy of the Coulombs: Federating energy storage for tiny, intermittently-powered sensors},
+  Year                     = {2015},
+  Organization             = {ACM},
+
+  Abstract                 = {Untethered sensing devices have, for decades, powered all system components (processors, sensors, actuators, etc) from a single shared energy store (battery or capacitor). When designing batteryless sensors that are powered by harvested energy, this traditional approach results in devices that charge slowly and that are more error prone, inflexible, and inefficient than they could be. 
+
+This paper presents a novel federated approach to energy storage, called UFoP, that partitions and prioritizes harvested energy automatically into multiple isolated smaller energy stores (capacitors). UFoP simplifies task scheduling, enables efficient use of components with differing voltage requirements, and produces devices that charge more quickly under identical harvesting conditions than a traditional centralized approach. We have implemented a UFoP reference design and conducted extensive experimental evaluation, including a short deployment. Our experimental results using an MSP430-based prototype show that UFoP provides as much as 10% more computational availability, and as much as four times more radio availability than the centralized approach. For all applications and energy environments evaluated, UFoP harvested 0.7-10.2% more energy than the centralized equivalent; meaning UFoP adds zero energy overhead.},
+  Author                   = {Hester, Josiah and Sitanayah, Lanny and Sorber, Jacob},
+  Journal                  = {Proceedings of the 13th ACM Conference on Embedded Networked Sensor Systems},
+  Owner                    = {wspies},
+  Pages                    = {5--16},
+  Timestamp                = {2018.02.04}
+}
+
+@InProceedings{Hester.2017,
+  author    = {Hester, Josiah and Storer, Kevin and Sorber, Jacob},
+  title     = {Timely Execution on Intermittently Powered Batteryless Sensors},
+  booktitle = {Proceedings of the 15th ACM Conference on Embedded Network Sensor Systems},
+  year      = {2017},
+  series    = {SenSys ’17},
+  address   = {New York, NY, USA},
+  publisher = {Association for Computing Machinery},
+  abstract  = {Tiny intermittently powered computers can monitor objects in hard to reach places maintenance free for decades by leaving batteries behind and surviving off energy harvested from the environment—avoiding the cost of replacing and disposing of billions or trillions of dead batteries. However, creating programs for these sensors is difficult. Energy harvesting is inconsistent, energy storage is scarce, and batteryless sensors can lose power at any point in time—causing volatile memory, execution progress, and time to reset. In response to these disruptions, developers must write unwieldy programs attempting to protect against failures, instead of focusing on sensing goals, defining tasks, and generating useful data in a timely manner. To address these shortcomings, we have designed Mayfly, a language and runtime for timely execution of sensing tasks on tiny, intermittently-powered, energy harvesting sensing devices. Mayfly is a coordination language and runtime built on top of Embedded-C that combines intermittent execution fragments to form coherent sensing schedules—maintaining forward progress, data consistency, data freshness, and data utility across multiple power failures. Mayfly makes the passing of time explicit, binding data to the time it was gathered, and keeping track of data and time through power failures. We evaluated Mayfly against state-of-the art systems, conducted a user study, and implemented multiple real world applications across application domains in inventory tracking, and wearables.},
+  articleno = {Article 17},
+  doi       = {10.1145/3131672.3131673},
+  isbn      = {9781450354592},
+  location  = {Delft, Netherlands},
+  numpages  = {13},
+  owner     = {wspies},
+  timestamp = {2018.02.14},
+  url       = {https://doi.org/10.1145/3131672.3131673},
+}
+
+@Article{Highsmith.2011,
+  Title                    = {Kinetic Asymmetry in Transfemoral Amputees while Performing Sit to Stand and Stand to Sit Movements},
+  Author                   = {Highsmith, M. Jason and Kahle, Jason T. and Carey, Stephanie L. and Lura, Derek J. and Dubey, Rajiv V. and Csavina, Kristine R. and Quillen, William S.},
+  Journal                  = {Gait \& Posture},
+  Year                     = {2011},
+  Number                   = {1},
+  Pages                    = {86--91},
+  Volume                   = {34},
+
+  Abstract                 = {Transitional movements are a determinant of functional independence and have limited study in amputees. Microprocessor prosthetic knees’ abilities to assist transfemoral amputees with sitting and standing have not been studied. Through cross-sectional study, 21 transfemoral amputees, divided into 3 groups of 7 by knee type (power knee, C-leg, Mauch SNS) and 7 non-amputee controls (n = 28) performed sit to stand and stand to sit while kinematic and kinetic data were recorded. Transfemoral amputees can stand (1.6–2.0 s) and sit (2.1–2.8 s) at rates comparable to controls (1.6 s). Controls’ ground reaction force (GRF) and knee moment production was <7% asymmetric and superior to amputees’ during both movements. For sit to stand, amputees’ asymmetry for GRF ranged from 53 to 69% and 110 to 124% for knee moments. For stand to sit, amputees’ asymmetry for GRF ranged from 32 to 60% and 84 to 114% for knee moments. Hip moment asymmetry for sit to stand was less for control (21%) and power knee (34%) groups than that produced by the Mauch SNS (59%) group. For stand to sit, hip moment production for the Mauch SNS (47%) and C-leg groups (71%) were more asymmetric than controls (19%). In the majority of cases transfemoral amputees do not load their prosthesis extensively for standing up or sitting down.
+Therefore, this transitional movement is currently a one-legged task, which increases stress on the sound limb. Generally, the prosthetic knees studied did not produce a significant knee moment in either task. Although most differences between knee groups were not statistically significant, differences may be clinically meaningful on an individual basis.},
+  Owner                    = {wspies},
+  Publisher                = {Elsevier},
+  Timestamp                = {2018.04.24}
+}
+
+@Article{Hill.2000,
+  Title                    = {System architecture directions for networked sensors},
+  Author                   = {Hill, Jason and Szewczyk, Robert and Woo, Alec and Hollar, Seth and Culler, David and Pister, Kristofer},
+  Journal                  = {ACM SIGOPS operating systems review},
+  Year                     = {2000},
+  Number                   = {5},
+  Pages                    = {93--104},
+  Volume                   = {34},
+
+  Abstract                 = {Technological progress in integrated, low-power, CMOS communication devices and sensors makes a rich design space of networked sensors viable. They can be deeply embedded
+in the physical world and spread throughout our environment like smart dust. The missing elements are an overall system architecture and a methodology for systematic advance. 
+
+To this end, we identify key requirements, develop a small device that is representative of the class, design a tiny event-driven operating system, and show that it provides support for efficient modularity and concurrency-intensive operation. Our operating system fits in 178 bytes of memory, propagates events in the time it takes to copy 1.25 bytes of memory, context switches in the time it takes to copy 6 bytes of memory and supports two level scheduling. The analysis lays a groundwork for future architectural advances.},
+  Owner                    = {wspies},
+  Publisher                = {ACM},
+  Timestamp                = {2018.02.07}
+}
+
+@Proceedings{Jiang.2005,
+  Title                    = {Perpetual environmentally powered sensor networks},
+  Year                     = {2005},
+  Organization             = {IEEE Press},
+
+  Abstract                 = {Environmental energy is an attractive power source for low power wireless sensor networks. We present Prometheus, a system that intelligently manages energy transfer for perpetual operation without human intervention or servicing. Combining positive attributes of different energy storage elements and leveraging the intelligence of the microprocessor, we introduce an efficient multi-stage energy transfer system that reduces the common limitations of single energy storage systems to achieve near perpetual operation. We present our design choices, tradeoffs, circuit evaluations, performance analysis, and models. We discuss the relationships between system components and identify optimal hardware choices to meet an application’s needs. Finally we present our implementation of a real system that uses solar energy to power Berkeley’s Telos Mote. Our analysis predicts the system will operate for 43 years under 1% load, 4 years under 10% load, and 1 year under 100% load. Our implementation uses a two stage storage system consisting of supercapacitors (primary buffer) and a lithium rechargeable
+battery (secondary buffer). The mote has full knowledge of power levels and intelligently manages energy transfer to maximize lifetime.},
+  Author                   = {Jiang, Xiaofan and Polastre, Joseph and Culler, David},
+  Journal                  = {Proceedings of the 4th international symposium on Information processing in sensor networks},
+  Keywords                 = {IoT, embedded systems, Telos, wireless sensor networks, environmental power collection, technical whitepaper},
+  Owner                    = {wspies},
+  Pages                    = {65},
+  Timestamp                = {2018.01.31}
+}
+
+@InProceedings{Kellogg.2018,
+  Title                    = {Passive Wi-Fi: Bringing Low Power to Wi-Fi Transmissions},
+  Author                   = {Kellogg, Bryce and Talla, Vamsi and Gollakota, Shyamnath and Smith, Joshua R.},
+  Year                     = {2016},
+  Pages                    = {151--164},
+  Volume                   = {16},
+
+  Journal                  = {NSDI},
+  Owner                    = {wspies},
+  Timestamp                = {2018.02.26}
+}
+
+@Article{Kocher.2018,
+  Title                    = {Spectre Attacks: Exploiting Speculative Execution},
+  Author                   = {Kocher, Paul and Genkin, Daniel and Gruss, Daniel and Haas, Werner and Hamburg, Mike and Lipp, Moritz and Mangard, Stefan and Prescher, Thomas and Schwarz, Michael and Yarom, Yuval},
+  Journal                  = {arXiv preprint arXiv:1801.01203},
+  Year                     = {2018},
+
+  Abstract                 = {Modern processors use branch prediction and speculative execution to maximize performance. For example, if the destination of a branch depends on a memory value that is in the process of being read, CPUs will try guess the destination and attempt to execute ahead. When the memory value finally arrives, the CPU either discards or commits the speculative computation. Speculative logic is unfaithful in how it executes, can access to the victim’s memory and registers, and can perform operations with measurable side effects.
+
+Spectre attacks involve inducing a victim to speculatively perform operations that would not occur during correct program execution and which leak the victim’s confidential information via a side channel to the adversary. This paper describes practical attacks that combine methodology from side channel attacks, fault attacks, and return-oriented programming that can read arbitrary memory from the victim’s process. More broadly, the paper shows that speculative execution implementations violate the security assumptions underpinning numerous software security mechanisms, including operating system process separation, static analysis, containerization, just-in-time (JIT) compilation, and countermeasures to cache timing/side-channel attacks. These attacks represent a serious threat to actual systems, since vulnerable speculative execution capabilities are found in microprocessors from Intel, AMD, and ARM that are used in billions of devices.
+
+While makeshift processor-specific countermeasures are possible in some cases, sound solutions will require fixes to processor designs as well as updates to instruction set architectures (ISAs) to give hardware architects and software developers a common understanding as to what computation state CPU implementations are (and are not) permitted to leak.},
+  Owner                    = {wspies},
+  Timestamp                = {2018.02.21}
+}
+
+@Proceedings{Levis.2002,
+  Title                    = {Mate: A tiny virtual machine for sensor networks},
+  Year                     = {2002},
+  Number                   = {10},
+  Organization             = {ACM},
+  Volume                   = {37},
+
+  Abstract                 = {Composed of tens of thousands of tiny devices with very limited resources (“motes”), sensor networks are subject to novel systems problems and constraints. The large number of motes in a sensor network means that there will often be some failing nodes; networks must be easy to repopulate. Often there is no feasible method to recharge motes, so energy is a precious resource. Once deployed, a network must be reprogrammable although physically unreachable, and this reprogramming can be a significant energy cost. We present Maté, a tiny communication-centric virtual machine designed for sensor networks. Maté’s high-level interface allows complex programs to be very short (under 100 bytes), reducing the energy cost of transmitting new programs. Code is broken up into small capsules of 24 instructions, which can self-replicate through the network. Packet sending and reception capsules enable the deployment of ad-hoc routing and data aggregation algorithms. Maté’s concise, high-level program representation simplifies programming and allows large networks to be frequently reprogrammed in an energy-efficient manner; in addition, its safe execution environment suggests a use of virtual machines to provide the user/kernel boundary on motes that have no hardware protection mechanisms.},
+  Author                   = {Levis, Philip and Culler, David},
+  Journal                  = {ACM Sigplan Notices},
+  Owner                    = {wspies},
+  Pages                    = {85--95},
+  Timestamp                = {2018.02.11}
+}
+
+@Proceedings{Levy.2017,
+  Title                    = {Multiprogramming a 64kB Computer Safely and Efficiently},
+  Year                     = {2017},
+  Organization             = {ACM},
+
+  Abstract                 = {Low-power microcontrollers lack some of the hardware features and memory resources that enable multiprogrammable systems. Accordingly, microcontroller-based operating systems have not provided important features like fault isolation, dynamic memory allocation, and flexible concurrency. However, an emerging class of embedded applications are software platforms, rather than single purpose devices, and need these multiprogramming features. Tock, a new operating system for low-power platforms, takes advantage of limited hardware-protection mechanisms as well as the type-safety features of the Rust programming language to provide a multiprogramming environment for microcontrollers. Tock isolates software faults, provides memory protection, and efficiently manages memory for dynamic application workloads written in any language. It achieves this while retaining the dependability requirements of long-running applications.},
+  Author                   = {Levy, Amit and Campbell, Bradford and Ghena, Branden and Giffin, Daniel B and Pannuto, Pat and Dutta, Prabal and Levis, Philip},
+  Journal                  = {Proceedings of the 26th Symposium on Operating Systems Principles},
+  Owner                    = {wspies},
+  Pages                    = {234--251},
+  Timestamp                = {2018.02.11}
+}
+
+@Article{Lipp.2018,
+  Title                    = {Meltdown},
+  Author                   = {Lipp, Moritz and Schwarz, Michael and Gruss, Daniel and Prescher, Thomas and Haas, Werner and Mangard, Stefan and Kocher, Paul and Genkin, Daniel and Yarom, Yuval and Hamburg, Mike},
+  Journal                  = {arXiv preprint arXiv:1801.01207},
+  Year                     = {2018},
+
+  Abstract                 = {The security of computer systems fundamentally relies on memory isolation, e.g., kernel address ranges are marked as non-accessible and are protected from user access. In this paper, we present Meltdown. Meltdown exploits side effects of out-of-order execution on modern processors to read arbitrary kernel-memory locations including personal data and passwords. Out-of-order execution is an indispensable performance feature and present in a wide range of modern processors. The attack is independent of the operating system, and it does not rely on any software vulnerabilities. Meltdown breaks all security assumptions given by address space isolation as well as paravirtualized environments and, thus, every security mechanism building upon this foundation. On affected systems, Meltdown enables an adversary to read memory of other processes or virtual machines in the cloud without any permissions or privileges, affecting millions of customers and virtually every user of a personal computer. We show that the KAISER defense mechanism for KASLR [8] has the important (but inadvertent) side effect of impeding Meltdown. We stress that KAISER must be deployed immediately to prevent large-scale exploitation of this severe information leakage.},
+  Owner                    = {wspies},
+  Timestamp                = {2018.02.21}
+}
+
+@Proceedings{Mao.2017,
+  Title                    = {Indoor Follow Me Drone},
+  Year                     = {2017},
+  Organization             = {ACM},
+
+  Abstract                 = {Professional video taping is a costly and time consuming process. With the availability of inexpensive and powerful drones, it is possible to let drones automatically follow a user for video taping. This can not only reduce cost, but also support video taping in situations where otherwise not possible (e.g., during private moments or at inconvenient locations like indoor rock climbing). While there have been many follow-me drones on the market for outdoors, which rely on GPS, enabling indoor follow-me function is more challenging due to the lack of an effective approach to track users in indoor environments.
+
+To this end, we develop a holistic system that lets a mobile phone carried by a user accurately track the drone’s relative location and control it to maintain a specified distance and orientation for automatic video taping. We develop a series of techniques to (i) track a drone’s location using acoustic signals with sub-centimeter errors even under strong propeller noise from the drone and complicated multipath in indoor environments, and (ii) solve practical challenges in applying model predictive control (MPC) framework to control the drone. The latter consists of developing measurement-based flight models, designing measurement techniques to provide feedback to the controller, and predicting the user’s movement. We implement our system on AR Drone 2.0 and Samsung S7. The extensive evaluation shows that our drone can follow a user effectively and maintain a specified following distance and orientation within 2-3 cm and 1-3 degree errors, respectively. The videos taped by the drone during flight are smooth according to the jerk metric.},
+  Author                   = {Mao, Wenguang and Zhang, Zaiwei and Qiu, Lili and He, Jian and Cui, Yuchen and Yun, Sangki},
+  Journal                  = {Proceedings of the 15th Annual International Conference on Mobile Systems, Applications, and Services},
+  Keywords                 = {IoT, embedded systems, autonomous vehicles, localization, technical whitepaper},
+  Owner                    = {wspies},
+  Pages                    = {345--358},
+  Timestamp                = {2018.01.24}
+}
+
+@Article{Ney.2017,
+  Title                    = {SeaGlass: Enabling City-Wide IMSI-Catcher Detection},
+  Author                   = {Ney, Peter and Smith, Ian and Cadamuro, Gabriel and Kohno, Tadayoshi},
+  Journal                  = {Proceedings on Privacy Enhancing Technologies},
+  Year                     = {2017},
+  Number                   = {3},
+  Pages                    = {39--56},
+  Volume                   = {2017},
+
+  Abstract                 = {Cell-site simulators, also known as IMSI-catchers and stingrays, are used around the world by governments and criminals to track and eavesdrop on cell phones. Despite extensive public debate surrounding their use, few hard facts about them are available. For example, the richest sources of information on U.S. government cell-site simulator usage are from anonymous leaks, public records requests, and court proceedings. This lack of concrete information and the difficulty of independently obtaining such information hampers the public discussion. To address this deficiency, we build, deploy, and evaluate SeaGlass, a city-wide cell-site simulator detection network. SeaGlass consists of sensors that measure and upload data on the cellular environment to find the signatures of portable cell-site simulators. SeaGlass sensors are designed to be robust, low-maintenance, and deployable in vehicles for long durations. The data they generate is used to learn a city’s network properties to find anomalies consistent with cell-site simulators. We installed SeaGlass sensors into 15 ridesharing vehicles across two cities, collecting two months of data in each city. Using this data, we evaluate the system and show how SeaGlass can be used
+to detect signatures of portable cell-site simulators. Finally, we evaluate our signature detection methods and discuss anomalies discovered in the data.},
+  Owner                    = {wspies},
+  Publisher                = {De Gruyter Open},
+  Timestamp                = {2018.03.12}
+}
+
+@Article{Nguyen.2017,
+  Title                    = {A Lightweight And Inexpensive In-ear Sensing System For Automatic Whole-night Sleep Stage Monitoring},
+  Author                   = {Nguyen, Ann and Alqurashi, Raghda and Raghebi, Zohreh and Banaei-kahani, Farnoush and Halbower, Ann C. and Vu, Tam},
+  Journal                  = {GetMobile: Mobile Computing and Communications},
+  Year                     = {2017},
+  Number                   = {3},
+  Pages                    = {31--34},
+  Volume                   = {21},
+
+  Abstract                 = {This paper introduces LIBS, a light-weight and inexpensive wearable sensing system, that can capture electrical activities of human brain, eyes, and facial muscles with two pairs of custom-built flexible electrodes each of which is embedded on an off-the-shelf foam earplug. A supervised non-negative matrix factorization algorithm to adaptively analyze and extract these bioelectrical signals from a single mixed in-ear channel collected by the sensor is also proposed. While LIBS can enable a wide class of low-cost self-care, human computer interaction, and health monitoring applications, we demonstrate its medical potential by developing an autonomous whole-night sleep staging system utilizing LIBS’s outputs. We constructed a hardware prototype from off-the-shelf electronic components and used it to conduct 38 hours of sleep studies on 8 participants over a period of 30 days. Our evaluation results show that LIBS can monitor biosignals representing brain activities, eye movements, and muscle contractions with excellent fidelity such that it can be used for sleep stage classification with an average of more than 95% accuracy.},
+  Keywords                 = {IoT, embedded systems, medical devices, low-power applications, technical whitepaper},
+  Owner                    = {wspies},
+  Timestamp                = {2018.01.21}
+}
+
+@InProceedings{Pizzoli2014ICRA,
+  Title                    = {REMODE: Probabilistic, Monocular Dense Reconstruction in Real Time},
+  Author                   = {Pizzoli, Matia and Forster, Christian and Scaramuzza, Davide},
+  Year                     = {2014},
+
+  Abstract                 = {In this paper, we solve the problem of estimating dense and accurate depth maps from a single moving camera. A probabilistic depth measurement is carried out in real time
+on a per-pixel basis and the computed uncertainty is used to reject erroneous estimations and provide live feedback on the reconstruction progress. Our contribution is a novel approach to depth map computation that combines Bayesian estimation and recent development on convex optimization for image processing. We demonstrate that our method outperforms state-of-the-art techniques in terms of accuracy, while exhibiting high efficiency in memory usage and computing power. We call our approach REMODE (REgularized MOnocular Depth Estimation) and the CUDA-based implementation runs at 30Hz on a laptop computer.},
+  Journal                  = {IEEE International Conference on Robotics and Automation (ICRA)},
+  Owner                    = {wspies},
+  Paperurl                 = {http://rpg.ifi.uzh.ch/docs/ICRA14_Pizzoli.pdf},
+  Timestamp                = {2018.03.23},
+  Url                      = {https://github.com/uzh-rpg/rpg_open_remode}
+}
+
+@Proceedings{Polastre.2005,
+  Title                    = {Telos: Enabling Ultra-low Power Wireless Research},
+  Year                     = {2005},
+  Organization             = {IEEE},
+
+  Abstract                 = {We present Telos, an ultra low power wireless sensor module (“mote”) for research and experimentation. Telos is the latest in a line of motes developed by UC Berkeley to enable wireless sensor network (WSN) research. It is a new mote design built from scratch based on experiences with previous mote generations. Telos’ new design consists of three major goals to enable experimentation: minimal power consumption, easy to use, and increased software and hardware robustness. We discuss how hardware components are selected and integrated in order to achieve these goals. Using a Texas Instruments MSP430 microcontroller, Chipcon IEEE 802.15.4-compliant radio, and USB, Telos’ power profile is almost one-tenth the consumption of previous mote platforms while providing greater performance and throughput. It eliminates programming and support boards, while enabling experimentation with WSNs in both lab, testbed, and deployment settings.},
+  Author                   = {Polastre, Joseph and Szewczyk, Robert and Culler, David},
+  Journal                  = {Proceedings of the 4th international symposium on Information processing in sensor networks},
+  Keywords                 = {IoT, embedded systems, wireless sensing, ultra-low power, IEEE 802.15.4, technical whitepaper},
+  Owner                    = {wspies},
+  Pages                    = {48},
+  Timestamp                = {2018.01.30}
+}
+
+@Article{Ransford.2012,
+  Title                    = {Mementos: System support for long-running computation on RFID-scale devices},
+  Author                   = {Ransford, Benjamin and Sorber, Jacob and Fu, Kevin},
+  Journal                  = {Acm Sigplan Notices},
+  Year                     = {2012},
+  Number                   = {4},
+  Pages                    = {159--170},
+  Volume                   = {47},
+
+  Abstract                 = {Transiently powered computing devices such as RFID tags, kinetic energy harvesters, and smart cards typically rely on programs that complete a task under tight time constraints before energy starvation leads to complete loss of volatile memory. Mementos is a software system that transforms general-purpose programs into interruptible computations that are protected from frequent power losses by automatic, energy-aware state checkpointing. Mementos comprises a collection of optimization passes for the LLVM compiler infrastructure and a linkable library that exercises hardware support for energy measurement while managing state checkpoints stored in nonvolatile memory. We evaluate Mementos against diverse test cases in a trace-driven simulator of transiently powered RFID-scale devices. Although Mementos’s energy checks increase run time when energy is plentiful, they allow Mementos to safely suspend execution when energy dwindles, effectively spreading computation across zero or more power failures. This paper’s contributions are: a study of the runtime environment for programs on RFID-scale devices; an energy-aware state checkpointing system for these devices that is implemented for the MSP430 family of microcontrollers; and a trace-driven simulator of transiently powered RFID-scale devices.},
+  Owner                    = {wspies},
+  Publisher                = {ACM},
+  Timestamp                = {2018.02.14}
+}
+
+@Article{Sample.2008,
+  Title                    = {Design of an RFID-based battery-free programmable sensing platform},
+  Author                   = {Sample, Alanson P. and Yeager, Daniel J. and Powledge, Pauline S. and Mamishev, Alexander V. and Smith, Joshua R.},
+  Journal                  = {IEEE transactions on instrumentation and measurement},
+  Year                     = {2008},
+  Number                   = {11},
+  Pages                    = {2608--2615},
+  Volume                   = {57},
+
+  Abstract                 = {This paper presents the Wireless Identification and Sensing Platform (WISP), which is a programmable battery-free sensing and computational platform designed to explore sensor-enhanced radio frequency identification (RFID) applications. WISP uses a 16-bit ultralow-power microcontroller to perform sensing and computation while exclusively operating from harvested RF energy. Sensors that have successfully been integrated into the WISP platform to date include temperature, ambient light, rectified voltage, and orientation. The microcontroller encodes measurements into an Electronic Product Code (EPC) Class 1 Generation 1 compliant ID and dynamically computes the required 16-bit cyclical redundancy checking (CRC). Finally, WISP emulates the EPC protocol to communicate the ID to the RFID reader. To the authors’ knowledge, WISP is the first fully programmable computing platform that can operate using power transmitted from a long-range (UHF) RFID reader and communicate arbitrary multibit data in a single response packet.},
+  Keywords                 = {IoT, embedded systems, wireless sensing, RFID, ultra-low power, research primer},
+  Owner                    = {wspies},
+  Publisher                = {IEEE},
+  Timestamp                = {2018.01.29}
+}
+
+@Article{Satyanarayanan.2001,
+  Title                    = {Pervasive Computing: Vision and Challenges},
+  Author                   = {Satyanarayanan, Mahadev},
+  Journal                  = {IEEE Personal Communications},
+  Year                     = {2001},
+
+  Month                    = {August},
+  Number                   = {4},
+  Pages                    = {10--17},
+  Volume                   = {8},
+
+  Abstract                 = {This article discusses the challenges in computer systems research posed by the emerging field of pervasive computing. It first examines the relationship of this new field to its predecessors: distributed systems and mobile computing. It then identifies four new research thrusts: effective use of smart spaces, invisibility, localized scalability, and masking uneven conditioning. Next, it sketches a couple of hypothetical pervasive computing scenarios, and uses them to identify key capabilities missing from today’s systems. The article closes with a discussion of the research necessary to develop these capabilities.},
+  Keywords                 = {IoT, mobile computing, ubiquitous computing, embedded systems, research primer},
+  Owner                    = {wspies},
+  Timestamp                = {2018.01.10}
+}
+
+@Proceedings{Szewczyk.2004,
+  Title                    = {An Analysis of a Large Scale Habitat Monitoring Application},
+  Year                     = {2004},
+  Month                    = {November},
+  Organization             = {ACM},
+
+  Abstract                 = {Habitat and environmental monitoring is a driving application for wireless sensor networks. We present an analysis of data from a second generation sensor networks deployed during the summer and autumn of 2003. During a 4 month deployment, these networks, consisting of 150 devices, produced unique datasets for both systems and biological analysis. This paper focuses on nodal and network performance, with an emphasis on lifetime, reliability, and the the static and dynamic aspects of single and multi-hop networks. We compare the results collected to expectations set during the design phase: we were able to accurately predict lifetime of the single-hop network, but we underestimated the impact of multi-hop traffic overhearing and the nuances of power source selection. While initial packet loss data was commensurate with lab experiments, over the duration of the deployment, reliability of the back-end infrastructure and the transit network had a dominant impact on overall network performance. Finally, we evaluate the physical design of the sensor node based on deployment experience and a post mortem analysis. The results shed light on a number of design issues from network deployment, through selection of power sources to optimizations of routing decisions.},
+  Author                   = {Szewczyk, Robert and Mainwaring, Alan and Plastre, Joseph and Anderson, John and Culler, David},
+  Journal                  = {Proceedings of the 2nd international conference on Embedded networked sensor systems},
+  Keywords                 = {IoT, wireless sensor networks, wireless networking, habitat monitoring, data collection, technical whitepaper},
+  Owner                    = {wspies},
+  Pages                    = {214--226},
+  Timestamp                = {2018.01.14}
+}
+
+@InProceedings{Trippel.2017,
+  Title                    = {WALNUT: Waging doubt on the integrity of mems accelerometers with acoustic injection attacks},
+  Author                   = {Trippel, Timothy and Weisse, Ofir and Xu, Wenyuan and Honeyman, Peter and Fu, Kevin},
+  Year                     = {2017},
+  Organization             = {IEEE},
+  Pages                    = {3--18},
+
+  Abstract                 = {Cyber-physical systems depend on sensors to make automated decisions. Resonant acoustic injection attacks are already known to cause malfunctions by disabling MEMS-based gyroscopes. However, an open question remains on how to move beyond denial of service attacks to achieve full adversarial control of sensor outputs. Our work investigates how analog acoustic injection attacks can damage the digital integrity of a popular type of sensor: the capacitive MEMS accelerometer. Spoofing such sensors with intentional acoustic interference enables an out-of-spec pathway for attackers to deliver chosen digital values to microprocessors and embedded systems that blindly trust the unvalidated integrity of sensor outputs. Our contributions include (1) modeling the physics of malicious acoustic interference on MEMS accelerometers, (2) discovering the circuit-level security flaws that cause the vulnerabilities by measuring acoustic injection attacks on MEMS accelerometers as well as systems that employ on these sensors, and (3) two software-only defenses that mitigate many of the risks to the integrity of MEMS accelerometer outputs.
+
+We characterize two classes of acoustic injection attacks with increasing levels of adversarial control: output biasing and output control. We test these attacks against 20 models of capacitive MEMS accelerometers from 5 different manufacturers. Our experiments find that 75% are vulnerable to output biasing, and 65% are vulnerable to output control. To illustrate end-to-end implications, we show how to inject fake steps into a Fitbit with a $5 speaker. In our self-stimulating attack, we play a malicious music file from a smartphone’s speaker to control the on-board MEMS accelerometer trusted by a local app to pilot a toy RC car. In addition to offering hardware design suggestions to eliminate the root causes of insecure amplification and filtering, we introduce two low-cost software defenses that mitigate output biasing attacks: randomized sampling and 180 degree out-of-phase sampling. Thesesoftware-only approaches mitigate attacks by exploiting the periodic and predictable nature of the malicious acoustic interference signal. Our results call into question the wisdom of allowing microprocessors and embedded systems to blindly trust that hardware abstractions alone will ensure the integrity of sensor outputs.},
+  Journal                  = {Security and Privacy (EuroS\&P), 2017 IEEE European Symposium on},
+  Owner                    = {wspies},
+  Timestamp                = {2018.02.18}
+}
+
+@Article{Weiser.1991,
+  Title                    = {The Computer for the 21st Century},
+  Author                   = {Weiser, Mark},
+  Journal                  = {Scientific American},
+  Year                     = {1991},
+
+  Month                    = {September},
+  Number                   = {3},
+  Pages                    = {94--104},
+  Volume                   = {265},
+
+  Abstract                 = {Specialized elements of hardware and software, connected by wires, radio waves, and infrared, will be so ubiquitous that no one will notice their presence.},
+  Keywords                 = {IoT, mobile computing, ubiquitous computing, embedded systems, predictive article},
+  Owner                    = {wspies},
+  Timestamp                = {2018.01.10}
+}
+
+@Proceedings{Werner-Allen.2006,
+  Title                    = {Fidelity and Yield in a Volcano Monitoring Sensor Network},
+  Year                     = {2006},
+  Month                    = {November},
+  Organization             = {USENIX Association},
+
+  Abstract                 = {We present a science-centric evaluation of a 19-day sensor network deployment at Reventador, an active volcano in Ecuador. Each of the 16 sensors continuously sampled seismic and acoustic data at 100 Hz. Nodes used an event-detection algorithm to trigger on interesting volcanic activity and initiate reliable data transfer to the base station. During the deployment, the network recorded 229 earthquakes, eruptions, and other seismoacoustic events.
+
+The science requirements of reliable data collection, accurate event detection, and high timing precision drive sensor networks in new directions for geophysical monitoring. The main contribution of this paper is an evaluation of the sensor network as a scientific instrument, holding it to the standards of existing instrumentation in terms of data fidelity (the quality and accuracy of the recorded signals) and yield (the quantity of the captured data). We describe an approach to time rectification of the acquired signals that can recover accurate timing despite failures of the underlying time synchronization protocol. In addition, we perform a detailed study of the sensor network’s data using a direct comparison to a standalone data logger, as well as an investigation of seismic and acoustic wave arrival times across the network.},
+  Author                   = {Werner-Allen, Geoff and Lorincz, Konrad, and Johnson, Jeff and Lees, Jonathan and Welsh, Matt},
+  Journal                  = {Proceedings of the 7th symposium on Operating systems design and implementation},
+  Keywords                 = {IoT, wireless sensor networks, environment monitoring, data collection, technical whitepaper},
+  Owner                    = {wspies},
+  Pages                    = {381--396},
+  Timestamp                = {2018.01.14}
+}
+
+@Article{Willomitzer.2017,
+  Title                    = {Single-shot 3D motion picture camera with a dense point cloud},
+  Author                   = {Willomitzer, Florian and H'ausler, Gerd},
+  Journal                  = {Optics Express},
+  Year                     = {2017},
+  Number                   = {19},
+  Pages                    = {23451--23464},
+  Volume                   = {25},
+
+  Abstract                 = {We discuss physical and information theoretical limits of optical 3D metrology. Based on these principal considerations we introduce a novel single-shot 3D movie camera that almost reaches these limits. The camera is designed for the 3D acquisition of macroscopic live scenes. Like a hologram, each movie-frame encompasses the full 3D information about the object surface and the observation perspective can be varied while watching the 3D movie. The camera combines single-shot ability with a point cloud density close to the theoretical limit. No space-bandwidth is wasted by pattern codification. With 1-megapixel sensors, the 3D camera delivers nearly 300,000 independent 3D points within each frame. The 3D data display a lateral resolution and a depth precision only limited by physics. The approach is based on multi-line triangulation. The requisite low-cost technology is simple. Only two properly positioned synchronized cameras solve the profound ambiguity problem omnipresent in 3D metrology.},
+  Owner                    = {wspies},
+  Publisher                = {Optical Society of America},
+  Timestamp                = {2018.05.02}
+}
+
+@InProceedings{Xu.2017,
+  Title                    = {Passive VLC: Enabling Practical Visible Light Backscatter Communication for Battery-Free IoT Applications},
+  Author                   = {Xu, Xieyang and Shen, Yang and Yang, Junrui and Xu, Chenren and Shen, Guobin and Chen, Guojun and Ni, Yunzhe},
+  Year                     = {2017},
+  Organization             = {ACM},
+  Pages                    = {180--192},
+
+  Abstract                 = {This paper investigates the feasibility of practical backscatter communication using visible light for battery-free IoT applications. Based on the idea of modulating the light retroreflection with a commercial LCD shutter, we effectively synthesize these off-the-shelf optical components into a sub-mW low power visible light passive transmitter along with a retroreflecting uplink design dedicated for power constrained mobile/IoT devices. On top of that, we design, implement and evaluate PassiveVLC, a novel visible light backscatter communication system. PassiveVLC system enables a battery-free tag device to perform passive communication with the illuminating LEDs over the same light carrier and thus offers several favorable features including battery-free, sniff-proof, and biologically friendly for human-centric use cases. Experimental results from our prototyped system show that PassiveVLC is flexible with tag orientation, robust to ambient lighting conditions, and can achieve up to 1 kbps uplink speed. Link budget analysis and two proof-of-concept applications are developed to demonstrate PassiveVLC’s efficacy and practicality.},
+  Journal                  = {Proceedings of the 23rd Annual International Conference on Mobile Computing and Networking},
+  Owner                    = {wspies},
+  Timestamp                = {2018.02.28}
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
