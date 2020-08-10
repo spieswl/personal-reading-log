@@ -1,0 +1,26 @@
+readings:
+# | Template Entry:
+# - { title: "", author: "", genre: "", pages: 000, started: "", finished: "", cover_url: "" }
+# | Book Name                                      | Author Name                 | Genre              | Pages     | Date Started         | Date Finished         | URL to Book Cover                                                  |
+# 2012
+# 2013
+- { title: "SuperFreakonomics"                     , author: "Steven Levitt, Stephen Dubner", genre: "Nonfiction", pages: xxx, started: "", finished: "", cover_url: "" }
+# 2014
+# 2015
+# 2016
+- { title: "The Happiness Advantage"               , author: "Shawn Achor"       , genre: "Nonfiction", pages: xxx, started: "2016-04-22", finished: "2016-05-14", cover_url: "" }
+- { title: "H. P. Lovecraft: Great Tales of Horror", author: "H. P. Lovecraft"   , genre: "Fiction"   , pages: xxx, started: "", finished: "", cover_url: ""}
+# 2017
+- { title: "As You Wish"                           , author: "Cary Elwes"        , genre: "Nonfiction", pages: xxx, started: "2017-06-19", finished: "2017-07-07", cover_url: "" }
+# 2018
+# 2019
+- { title: "An Army at Dawn"                       , author: "Rick Atkinson"     , genre: "Nonfiction", pages: xxx, started: "2019-08-03", finished: "2019-08-31", cover_url: "" }
+- { title: "The Day of Battle"                     , author: "Rick Atkinson"     , genre: "Nonfiction", pages: xxx, started: "2019-09-02", finished: "2019-11-16", cover_url: "" }
+# 2020
+- { title: "The Guns at Last Light"                , author: "Rick Atkinson"     , genre: "Nonfiction", pages: 641, started: "2020-01-23", finished: "2020-04-18", cover_url: "" }
+- { title: "The End is Always Near"                , author: "Dan Carlin"        , genre: "Nonfiction", pages: 288, started: "2020-06-13", finished: "", cover_url: "" }
+- { title: "Deacon King Kong"                      , author: "James McBride"     , genre: "Fiction"   , pages: 370, started: "2020-07-16", finished: "2020-07-19", cover_url: "" }
+- { title: "Effective C++"                         , author: "Scott Meyers"      , genre: "Technical" , pages: 272, started: "", finished: "", cover_url: "" }
+- { title: "Effective Modern C++"                  , author: "Scott Meyers"      , genre: "Technical" , pages: 301, started: "", finished: "", cover_url: "" }
+- { title: "The Nature of the Beast"               , author: "Louise Penny"      , genre: "Fiction"   , pages: 374, started: "2020-07-26", finished: "", cover_url: "" }
+- { title: "The Road"                              , author: "Cormac McCarthy"   , genre: "Fiction"   , pages: xxx, started: "", finished: "", cover_url: "" }
