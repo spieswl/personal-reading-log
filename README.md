@@ -7,7 +7,7 @@ This helps me keep track of books and academic papers I've read.
 Most every academic paper someone will read SHOULD have a nice BibTeX citation block. I prefer to enter those (with additional tagging and notes, more on that in a second) in a `.bib` database. I typically copy the BibTeX reference directly into the database (or import through a nice BibTeX manager), and add two extra fields at the end:
 
 ```
-    Owner = {wspies},
+    Reader = {wspies},
     Timestamp = {YYYY.MM.DD}
 ```
 
