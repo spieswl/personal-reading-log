@@ -20,8 +20,9 @@ readings:
 - { title: "Deacon King Kong"                      , author: "James McBride"                , genre: "Fiction"   , pages: 384, started: "2020-07-16", finished: "2020-07-19", isbn: "9780735216723" }
 - { title: "The Nature of the Beast"               , author: "Louise Penny"                 , genre: "Fiction"   , pages: 400, started: "2020-07-26", finished: "2020-08-12", isbn: "9781250022103" }
 - { title: "The Road"                              , author: "Cormac McCarthy"              , genre: "Fiction"   , pages: 304, started: "2020-09-16", finished: "2020-09-22", isbn: "9780307387899" }
-- { title: "Breakfast of Champions"                , author: "Kurt Vonnegut"                , genre: "Fiction"   , pages: 320, started: "          ", finished: "          ", isbn: "9780385334204" }
+- { title: "Breakfast of Champions"                , author: "Kurt Vonnegut"                , genre: "Fiction"   , pages: 320, started: "2020-10-16", finished: "2020-10-20", isbn: "9780385334204" }
+- { title: "Good Omens"                            , author: "Terry Pratchett, Neil Gaiman" , genre: "Fiction"   , pages: 400, started: "          ", finished: "          ", isbn: "9780060853969" }
 - { title: "The Guns at Last Light"                , author: "Rick Atkinson"                , genre: "Nonfiction", pages: 896, started: "2020-01-23", finished: "2020-04-18", isbn: "9780594871118" }
-- { title: "The End is Always Near"                , author: "Dan Carlin"                   , genre: "Nonfiction", pages: 288, started: "2020-06-13", finished: "          ", isbn: "9780062868046" }
-- { title: "Effective C++"                         , author: "Scott Meyers"                 , genre: "Technical" , pages: 272, started: "2020-09-07", finished: "          ", isbn: "9780321334879" }
+- { title: "The End is Always Near"                , author: "Dan Carlin"                   , genre: "Nonfiction", pages: 288, started: "2020-06-13", finished: "2020-06-28", isbn: "9780062868046" }
+- { title: "Effective C++"                         , author: "Scott Meyers"                 , genre: "Technical" , pages: 272, started: "          ", finished: "          ", isbn: "9780321334879" }
 - { title: "Effective Modern C++"                  , author: "Scott Meyers"                 , genre: "Technical" , pages: 301, started: "          ", finished: "          ", isbn: "9781491903995" }
