@@ -4,17 +4,44 @@ This helps me keep track of books and academic papers I've read.
 
 ## Tracking Academic Papers
 
-Most every academic paper someone will read SHOULD have a nice BibTeX citation block. I prefer to enter those (with additional tagging and notes, more on that in a second) in a `.bib` database. I typically copy the BibTeX reference directly into the database (or import through a nice BibTeX manager), and add two extra fields at the end:
+### Overview
 
-```
-    Reader = {wspies},
-    Timestamp = {YYYY.MM.DD}
-```
-
-My name goes in the __Owner__ field (admittedly a bit redundant here), and the date in YYYY.MM.DD format goes in the __Timestamp__ field. I occasionally add subject-matter tags, or tags that make it quickly for me to find concepts or ideas in the papers that may be relevant to other areas of interest, to the log entries.
-
-Personally, I like to use [Zotero](https://www.zotero.org/) when I want to use a nice-looking front-end managment tool.
+(REWORK IN PROGRESS)
 
 ## Tracking Books
 
-TODO
+### Overview
+
+Another effort to do more self-quantification (and self-reflection).
+
+In the interest of keeping a log of the books I've been reading, I started this little side project. I discovered two things when I started doing this: 1) recording what I've read provides an extra push to _keep_ reading, and 2) my memories of the essence of these books are stronger. Feel free to fork this repo and replace the contents of the `book_reading_log` with your own data.
+
+This part of `personal-reading-log` has three components: The first is `book_reading_log.yaml`; a continuously updated log of what books I have read, when I read them, the genre a particular book falls under, and some other details that I'll figure out how to deal with later (page count, among other things). The log should be easy to parse _for humans and computers alike_ and is formatted as a YAML file. The second is a **Python** script, `generate_book_stats.py`, that parses the reading log and generates a chart showing completed readings for a given calendar year.  The third is a folder with images containing covers of each of the books listed in the log; I wanted something more visually appealing than just text on a graph, so I have small, local copies of book cover preview images that I overlay on the reading chart. This last piece is optional, the script can still generate output without the covers folder.
+
+Check the **_Script Usage_** section for more detailed operational notes on generating reading metrics. Check the **_Getting New Book Covers_** section for the workflow I use to add new book covers, if you are so inclined.
+
+### Script Usage
+
+**NOTE**: The generation script parses `book_reading_log.yaml`, which is assumed to be in the current working directory, for data. If no books are shown as _either_ **started** or **finished** in the given year, default or otherwise, an empty chart will be generated. Books that are **started** but **not finished** in the given year will show as being read up to December 31st. Books that are **not started** but **finished** in the given year will show as starting up from January 1st.
+
+This command generates a reading log visualization for the current year (based on system time):
+
+```bash
+$ generate_book_stats.py
+```
+
+This command will generate a reading log visualization for the specified year:
+
+```bash
+$ generate_book_stats.py -y {YEAR}
+```
+
+### Getting New Book Covers
+
+This is just how I do this. I found the cover images I can get from particular listings on Barnes & Noble's website are of the highest quality. Finding the specific listing that pairs with the book I possess (hardcover, revision counter, usually based on the ISBN-13) is the most tricky aspect of this. Some more automation here would be nice, since having to hunt down particular assets is mindnumbing.
+
+1. Search the [Barnes & Noble website](https://www.barnesandnoble.com/) for a particular book's ISBN-13.
+2. Go to that book's listing and isolate (through right-click or whatever option menu, use "View Image" on) the cover image.
+3. Save the image to `./books/covers`.
+4. Resize the image to have a width of 260 pixels, maintaining the aspect ratio.
+5. Change the filename to the `isbn` value for the matching book entry from the reading log.
