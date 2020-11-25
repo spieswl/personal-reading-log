@@ -1,18 +1,12 @@
 readings:
 # | Template Entry:
-# - { title: "", author: "", genre: "", pages: 000, started: "", finished: "", isbn: "" }
-# | Book Name                                      | Author Name                            | Genre              | Pages     | Date Started         | Date Finished         | ISBN String                                                  |
-# 2012
-# 2013
-- { title: "SuperFreakonomics"                     , author: "Steven Levitt, Stephen Dubner", genre: "Nonfiction", pages: 270, started: "          ", finished: "          ", isbn: "9780060889579" }
-# 2014
-# 2015
-# 2016
-- { title: "H. P. Lovecraft: Great Tales of Horror", author: "H. P. Lovecraft"              , genre: "Fiction"   , pages: 608, started: "          ", finished: "          ", isbn: "9781435140370" }
-- { title: "The Happiness Advantage"               , author: "Shawn Achor"                  , genre: "Nonfiction", pages: 256, started: "2016-04-22", finished: "2016-05-14", isbn: "9780307591555" }
-# 2017
-- { title: "As You Wish"                           , author: "Cary Elwes"                   , genre: "Nonfiction", pages: 272, started: "2017-06-19", finished: "2017-07-07", isbn: "9781476764023" }
-# 2018
+# - { title: "", author: "", genre: "", pages: xxx, started: "", finished: "", isbn: "" }
+# | Book Name                                      | Author Name                            | Genre              | Pages     | Date Started         | Date Finished         | ISBN String           |
+# Reread These At Some Point
+- { title: "SuperFreakonomics"                     , author: "Steven Levitt, Stephen Dubner", genre: "Nonfiction", pages: 270, started: "", finished: "", isbn: "9780060889579" }
+- { title: "H. P. Lovecraft: Great Tales of Horror", author: "H. P. Lovecraft"              , genre: "Fiction"   , pages: 608, started: "", finished: "", isbn: "9781435140370" }
+- { title: "The Happiness Advantage"               , author: "Shawn Achor"                  , genre: "Nonfiction", pages: 256, started: "", finished: "", isbn: "9780307591555" }
+- { title: "As You Wish"                           , author: "Cary Elwes"                   , genre: "Nonfiction", pages: 272, started: "", finished: "", isbn: "9781476764023" }
 # 2019
 - { title: "An Army at Dawn"                       , author: "Rick Atkinson"                , genre: "Nonfiction", pages: 704, started: "2019-08-03", finished: "2019-08-31", isbn: "9780805062885" }
 - { title: "The Day of Battle"                     , author: "Rick Atkinson"                , genre: "Nonfiction", pages: 816, started: "2019-09-02", finished: "2019-11-16", isbn: "9780805062892" }
@@ -21,8 +15,11 @@ readings:
 - { title: "The Nature of the Beast"               , author: "Louise Penny"                 , genre: "Fiction"   , pages: 400, started: "2020-07-26", finished: "2020-08-12", isbn: "9781250022103" }
 - { title: "The Road"                              , author: "Cormac McCarthy"              , genre: "Fiction"   , pages: 304, started: "2020-09-16", finished: "2020-09-22", isbn: "9780307387899" }
 - { title: "Breakfast of Champions"                , author: "Kurt Vonnegut"                , genre: "Fiction"   , pages: 320, started: "2020-10-16", finished: "2020-10-20", isbn: "9780385334204" }
-- { title: "Good Omens"                            , author: "Terry Pratchett, Neil Gaiman" , genre: "Fiction"   , pages: 400, started: "          ", finished: "          ", isbn: "9780060853969" }
+- { title: "Good Omens"                            , author: "Terry Pratchett, Neil Gaiman" , genre: "Fiction"   , pages: 400, started: "2020-11-11", finished: "2020-11-16", isbn: "9780060853969" }
+- { title: "The Lovely Bones"                      , author: "Alice Sebold"                 , genre: "Fiction"   , pages: 368, started: "", finished: "", isbn: "9780316168816" }
+- { title: "A Gentleman in Moscow"                 , author: "Amor Towles"                  , genre: "Fiction"   , pages: 496, started: "", finished: "", isbn: "9780143110439" }
 - { title: "The Guns at Last Light"                , author: "Rick Atkinson"                , genre: "Nonfiction", pages: 896, started: "2020-01-23", finished: "2020-04-18", isbn: "9780594871118" }
 - { title: "The End is Always Near"                , author: "Dan Carlin"                   , genre: "Nonfiction", pages: 288, started: "2020-06-13", finished: "2020-06-28", isbn: "9780062868046" }
-- { title: "Effective C++"                         , author: "Scott Meyers"                 , genre: "Technical" , pages: 272, started: "          ", finished: "          ", isbn: "9780321334879" }
-- { title: "Effective Modern C++"                  , author: "Scott Meyers"                 , genre: "Technical" , pages: 301, started: "          ", finished: "          ", isbn: "9781491903995" }
+- { title: "Effective C++"                         , author: "Scott Meyers"                 , genre: "Technical" , pages: 272, started: "", finished: "", isbn: "9780321334879" }
+- { title: "Effective Modern C++"                  , author: "Scott Meyers"                 , genre: "Technical" , pages: 301, started: "", finished: "", isbn: "9781491903995" }
+# 2021
