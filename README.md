@@ -43,7 +43,8 @@ $ generate_book_stats.py -y {YEAR}
 This is just how I do this. I found the cover images I can get from particular listings on Barnes & Noble's website are of the highest quality. Finding the specific listing that pairs with the book I possess (hardcover, revision counter, usually based on the ISBN-13) is the most tricky aspect of this. Some more automation here would be nice, since having to hunt down particular assets is mindnumbing.
 
 1. Search the [Barnes & Noble website](https://www.barnesandnoble.com/) for a particular book's ISBN-13.
-2. Go to that book's listing and isolate (through right-click or whatever option menu, use "View Image" on) the cover image.
-3. Save the image to `./books/covers`.
-4. Resize the image to have a width of 260 pixels, maintaining the aspect ratio.
+2. Go to that book's listing and isolate (through right-click or whatever option menu, use "View Image" or "Open Image in New Tab") the cover image.
+  * If the image is hosted in `.webp` format, save as a `webp` to the local machine, reopen, and save as a new `jpg`.
+3. Resize the image to have a width of 260 pixels, maintaining the aspect ratio.
+4. Save the image to `./books/covers`.
 5. Change the filename to the `isbn` value for the matching book entry from the reading log.
