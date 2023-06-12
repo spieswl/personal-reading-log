@@ -2,14 +2,14 @@ readings:
 # | Template Entry:
 # - { title: "", author: "", genre: "", pages: xxx, started: "", finished: "", isbn: "" }
 # | Book Name                                      | Author Name                            | Genre              | Pages     | Date Started         | Date Finished         | ISBN-13 String        |
-# Reread These At Some Point
+# Reread these at some point
 - { title: "SuperFreakonomics"                     , author: "Steven Levitt, Stephen Dubner", genre: "Nonfiction", pages: 270, started: "", finished: "", isbn: "9780060889579" }
-- { title: "H. P. Lovecraft: Great Tales of Horror", author: "H. P. Lovecraft"              , genre: "Fiction"   , pages: 608, started: "", finished: "", isbn: "9781435140370" }
 - { title: "The Happiness Advantage"               , author: "Shawn Achor"                  , genre: "Nonfiction", pages: 256, started: "", finished: "", isbn: "9780307591555" }
-- { title: "As You Wish"                           , author: "Cary Elwes"                   , genre: "Nonfiction", pages: 272, started: "", finished: "", isbn: "9781476764023" }
 - { title: "Effective C++"                         , author: "Scott Meyers"                 , genre: "Technical" , pages: 320, started: "", finished: "", isbn: "9780321334879" }
 - { title: "Effective Modern C++"                  , author: "Scott Meyers"                 , genre: "Technical" , pages: 334, started: "", finished: "", isbn: "9781491903995" }
 # 2019
+- { title: "H. P. Lovecraft: Great Tales of Horror", author: "H. P. Lovecraft"              , genre: "Fiction"   , pages: 608, started: "2019-02-04", finished: "2019-05-19", isbn: "9781435140370" }
+- { title: "As You Wish"                           , author: "Cary Elwes"                   , genre: "Nonfiction", pages: 272, started: "2019-06-18", finished: "2019-06-24", isbn: "9781476764023" }
 - { title: "An Army at Dawn"                       , author: "Rick Atkinson"                , genre: "Nonfiction", pages: 704, started: "2019-08-03", finished: "2019-08-31", isbn: "9780805062885" }
 - { title: "The Day of Battle"                     , author: "Rick Atkinson"                , genre: "Nonfiction", pages: 816, started: "2019-09-02", finished: "2019-11-16", isbn: "9780805062892" }
 # 2020
@@ -29,3 +29,5 @@ readings:
 - { title: "The Things They Carried"               , author: "Tim O'Brien"                  , genre: "Nonfiction", pages: 256, started: "2021-09-13", finished: "2021-09-14", isbn: "9780618706419" }
 # 2022
 - { title: "Project Hail Mary"                     , author: "Andy Weir"                    , genre: "Fiction"   , pages: 496, started: "2022-11-02", finished: "2022-11-02", isbn: "9780593135204" }
+# 2023
+- { title: "Into the Wild"                         , author: "Jon Krakauer"                 , genre: "Nonfiction", pages: 240, started: "2022-12-24", finished: "2023-01-02", isbn: "9780385486804" }
