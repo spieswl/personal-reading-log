@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import argparse
 import os
@@ -18,10 +18,7 @@ from matplotlib import font_manager as fm, rcParams
 plt.style.use('seaborn-darkgrid')
 
 # Global font inclusions
-font_dir = "C:\\Users\\spies\\AppData\\Local\\Microsoft\\Windows\\Fonts"
-font_files = fm.findSystemFonts(fontpaths=font_dir)
-font_list = fm.createFontList(font_files)
-fm.fontManager.ttflist.extend(font_list)
+fm.findSystemFonts(fontpaths=None, fontext="ttf")
 
 # Genre colormap
 genre_colors = { 'Nonfiction' : 'tab:cyan',
@@ -40,15 +37,15 @@ def month_day_splits(year):
 
 
 def main():
-  """
+  """TODO: Add some documentation
   """
   # Get the current year from system time
-  current_year = date.today().year
+  system_year = date.today().year
 
   # Parse arguments passed to the script
   parser = argparse.ArgumentParser(description='Generate a visualization for the target book log YAML file.')
   parser.add_argument('-y', '--year', type=int, help='What year chart should be generated? (default: current year)',
-                      default=current_year)
+                      default=system_year)
   args = parser.parse_args()
 
   yaml_path = os.path.realpath("book_reading_log.yaml")
@@ -60,11 +57,18 @@ def main():
 
   cover_dir = os.path.join(os.path.realpath("."), "covers")
 
-  # Date-time handling
+  # Date-time handling (with offsets at beginning and end)
+  this_year = args.year
+  last_year = this_year - 1
+  next_year = this_year + 1
+
   months_in_year = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October",
                     "November", "December"]
-  days_in_year = (date((args.year + 1), 1, 1) - date(args.year, 1, 1)).days
-  first_days_of_month = month_day_splits(args.year)
+  days_in_year = (date(next_year, 1, 1) - date(this_year, 1, 1)).days
+  first_days_of_month = month_day_splits(this_year)
+  
+  first_day_of_year = date(this_year, 1, 1).day
+  last_day_of_year = days_in_year
 
   # Initializations used for data presentation
   relevant_entries = []
@@ -74,7 +78,7 @@ def main():
     data = yaml.load(yaml_file, Loader=yaml.FullLoader)
     yaml_file.close()
 
-  # Find the books we care about (based on dates started or finished)
+  # Find the books we care about (based on dates started or finished), reverse the order so the list is forward chonological
   for book in data['readings']:
     try:
       book['started'] = date.fromisoformat(book['started'])
@@ -82,23 +86,32 @@ def main():
     except ValueError:
       continue
 
-    if (book['started'].year == args.year or book['finished'].year == args.year):
+    if (book['started'].year == this_year or book['finished'].year == this_year):
       relevant_entries.append(book)
+  relevant_entries.reverse()
 
   # Set up the plot infrastructure (plot figure is set to 25.6 W x 19.2 H or a 1.333:1 aspect ratio)
   fig, axes = plt.subplots()
-  fig.set_figheight(19.2)
   fig.set_figwidth(25.6)
-  plt.subplots_adjust(left=0.15, bottom=0.1, right=0.95, top=0.9, wspace=1, hspace=1)
+  fig.set_figheight(19.2)
+  plt.subplots_adjust(left=0.175, bottom=0.1, right=0.95, top=0.9, wspace=1, hspace=1)
 
   # Create a plot for each book in the relevant entries
   book_titles = []
   for count, entry in enumerate(relevant_entries, 1):
     # Pertinent book details
-    book_titles.append(entry['title'] + "\n" + entry['author'] + " - " + entry['genre'] + "\n" + "({} pages)".format(entry['pages']))
+    book_titles.append(entry['title'] + "\n" + entry['author'] + "\n" + entry['genre'] + "\n" + "({} pages)".format(entry['pages']))
     book_color = genre_colors[entry['genre']]
+
+    # Handle special cases where the start and end are in different years
     start_day = entry['started'].timetuple().tm_yday
+    if (entry['started'].timetuple().tm_year != this_year):
+      start_day = first_day_of_year
+
     end_day = entry['finished'].timetuple().tm_yday
+    if (entry['finished'].timetuple().tm_year != this_year):
+      end_day = last_day_of_year
+
     days_to_read = end_day - start_day
 
     # Length of time reading the book
@@ -109,6 +122,7 @@ def main():
     cover_img = plt.imread(os.path.join(cover_dir, entry_isbn), format='jpg')
     cover_img_box = OffsetImage(cover_img, zoom=0.25)
 
+    # 9 days is enough distance on the x-axis to show the full timeline bar and have the covers immediately adjacent to the starting line
     cover_anno_pos = (start_day - 9, count)
     cover_anno = AnnotationBbox(cover_img_box, cover_anno_pos, xycoords='data')
     axes.add_artist(cover_anno)
@@ -117,7 +131,7 @@ def main():
   ## X-Axis
   axes.set_xlim(1, days_in_year)
   axes.set_xticks(first_days_of_month)
-  axes.set_xticklabels(months_in_year, fontname="Open Sans SemiBold", fontsize=18)
+  axes.set_xticklabels(months_in_year, fontname="Open Sans", fontsize=20)
   plt.xticks(rotation=45)
 
   ## Shift the X-axis tick labels
@@ -128,22 +142,19 @@ def main():
   ## Y-Axis
   axes.set_ylim(0, len(relevant_entries) + 1.0)
   axes.set_yticks(list(range(1, len(relevant_entries) + 1)))
-  axes.set_yticklabels(book_titles, fontname="Open Sans SemiBold", fontsize=18, fontstyle="italic")
+  axes.set_yticklabels(book_titles, fontname="Open Sans", fontsize=20, fontstyle="italic")
 
   ## Shift the Y-axis tick labels
-  y_offset = mtrans.ScaledTranslation(-10/72, 0/72, fig.dpi_scale_trans)
+  y_offset = mtrans.ScaledTranslation(-40/72, 0/72, fig.dpi_scale_trans)
   for label in axes.yaxis.get_majorticklabels():
     label.set_transform(label.get_transform() + y_offset)
 
   ## Title Bar
-  axes.set_title("Books Read in the Year {}".format(args.year), fontname="Montserrat ExtraBold", fontsize=36, pad=30)
+  axes.set_title("Books Read in the Year {}".format(this_year), fontname="Montserrat ExtraBold", fontsize=36, pad=30)
 
   # Save the figure in a local image file
-  plt.savefig('reading_log_{}.png'.format(args.year), format='png')
+  plt.savefig('reading-log-{}.png'.format(this_year), format='png')
 
-  return
-
-########################################################################################################################
 
 if __name__ == "__main__":
   try:
