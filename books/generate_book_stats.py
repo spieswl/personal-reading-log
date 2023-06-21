@@ -1,19 +1,18 @@
 #!/usr/bin/env python3
 
 import argparse
+from datetime import date
 import os
 import glob
 import numpy as np
+import yaml
+
+from matplotlib import font_manager as fm, rcParams
 import matplotlib.colors as mcolors
 import matplotlib.dates as mdates
 import matplotlib.pyplot as plt
 import matplotlib.transforms as mtrans
-from matplotlib.offsetbox import AnnotationBbox
-from matplotlib.offsetbox import OffsetImage
-import yaml
-
-from datetime import date
-from matplotlib import font_manager as fm, rcParams
+from matplotlib.offsetbox import AnnotationBbox, OffsetImage
 
 plt.style.use('seaborn-darkgrid')
 
@@ -57,18 +56,19 @@ def main():
 
   cover_dir = os.path.join(os.path.realpath("."), "covers")
 
-  # Date-time handling (with offsets at beginning and end)
+  # Date-time handling
   this_year = args.year
   last_year = this_year - 1
   next_year = this_year + 1
 
-  months_in_year = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October",
-                    "November", "December"]
-  days_in_year = (date(next_year, 1, 1) - date(this_year, 1, 1)).days
-  first_days_of_month = month_day_splits(this_year)
-  
   first_day_of_year = date(this_year, 1, 1).day
-  last_day_of_year = days_in_year
+  last_day_of_year = (date(next_year, 1, 1) - date(this_year, 1, 1)).days
+
+  # Appending the last day of year (and labeling it with a blank month) will draw a vertical line at the end of the year
+  first_day_of_months = month_day_splits(this_year)
+  first_day_of_months.append(last_day_of_year)
+  months_in_year = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October",
+                    "November", "December", ""]
 
   # Initializations used for data presentation
   relevant_entries = []
@@ -122,15 +122,18 @@ def main():
     cover_img = plt.imread(os.path.join(cover_dir, entry_isbn), format='jpg')
     cover_img_box = OffsetImage(cover_img, zoom=0.25)
 
-    # 9 days is enough distance on the x-axis to show the full timeline bar and have the covers immediately adjacent to the starting line
-    cover_anno_pos = (start_day - 9, count)
+    # 10 days is enough distance on the x-axis to show the full timeline bar and have the covers immediately adjacent to the starting line
+    cover_anno_pos = (start_day - 10, count)
     cover_anno = AnnotationBbox(cover_img_box, cover_anno_pos, xycoords='data')
     axes.add_artist(cover_anno)
 
   # Table formatting
+  axes.set_facecolor("#dddddd")
+
   ## X-Axis
-  axes.set_xlim(1, days_in_year)
-  axes.set_xticks(first_days_of_month)
+  chart_day_padding = 10
+  axes.set_xlim(-chart_day_padding, last_day_of_year + chart_day_padding)
+  axes.set_xticks(first_day_of_months)
   axes.set_xticklabels(months_in_year, fontname="Open Sans", fontsize=20)
   plt.xticks(rotation=45)
 
@@ -145,7 +148,7 @@ def main():
   axes.set_yticklabels(book_titles, fontname="Open Sans", fontsize=20, fontstyle="italic")
 
   ## Shift the Y-axis tick labels
-  y_offset = mtrans.ScaledTranslation(-40/72, 0/72, fig.dpi_scale_trans)
+  y_offset = mtrans.ScaledTranslation(-50/72, 0/72, fig.dpi_scale_trans)
   for label in axes.yaxis.get_majorticklabels():
     label.set_transform(label.get_transform() + y_offset)
 
