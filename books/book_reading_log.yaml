@@ -31,4 +31,4 @@ readings:
 - { title: "Project Hail Mary"                     , author: "Andy Weir"                    , genre: "Fiction"   , pages: 496, started: "2022-11-02", finished: "2022-11-02", isbn: "9780593135204" }
 # 2023
 - { title: "Into the Wild"                         , author: "Jon Krakauer"                 , genre: "Nonfiction", pages: 240, started: "2022-12-24", finished: "2023-01-02", isbn: "9780385486804" }
-- { title: "The Curse of the Marquis de Sade"      , author: "Joel Warner"                  , genre: "Nonfiction", pages: 304, started: "2023-06-17", finished: "", isbn: "9780593135686" }
+- { title: "The Curse of the Marquis de Sade"      , author: "Joel Warner"                  , genre: "Nonfiction", pages: 304, started: "2023-06-17", finished: "2023-07-03", isbn: "9780593135686" }
