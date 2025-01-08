@@ -30,5 +30,13 @@ readings:
 # 2023
 - { title: "Into the Wild"                         , author: "Jon Krakauer"                 , genre: "Nonfiction", pages: 240, started: "2022-12-24", finished: "2023-01-02", isbn: "9780385486804" }
 - { title: "The Curse of the Marquis de Sade"      , author: "Joel Warner"                  , genre: "Nonfiction", pages: 304, started: "2023-06-17", finished: "2023-07-03", isbn: "9780593135686" }
+- { title: "Einstein's Dreams"                     , author: "Alan Lightman"                , genre: "Fiction"   , pages: 144, started: "2023-09-15", finished: "2023-09-15", isbn: "9781400077809" }
+- { title: "The Jungle Books"                      , author: "Rudyard Kipling"              , genre: "Fiction"   , pages: 372, started: "2023-12-24", finished: "2023-12-31", isbn: "9780553211993" }
 - { title: "Effective C++"                         , author: "Scott Meyers"                 , genre: "Technical" , pages: 320, started: "2023-07-05", finished: "2023-07-14", isbn: "9780321334879" }
+# 2024
+- { title: "The Colour of Magic"                   , author: "Terry Pratchett"              , genre: "Fiction"   , pages: 272, started: "2024-09-06", finished: "2024-09-08", isbn: "9780063373662" }
+- { title: "The Light Fantastic"                   , author: "Terry Pratchett"              , genre: "Fiction"   , pages: 272, started: "2024-10-15", finished: "2024-10-18", isbn: "9780063373679" }
+# 2025
+- { title: "The Shadow of the Gods"                , author: "John Gwynne"                  , genre: "Fiction"   , pages: 528, started: "2024-12-24", finished: "xxxxxxxxxx", isbn: "9780316539883" }
+# Pending
 - { title: "Effective Modern C++"                  , author: "Scott Meyers"                 , genre: "Technical" , pages: 334, started: "", finished: "", isbn: "9781491903995" }
