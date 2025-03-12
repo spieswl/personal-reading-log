@@ -37,6 +37,7 @@ readings:
 - { title: "The Colour of Magic"                   , author: "Terry Pratchett"              , genre: "Fiction"   , pages: 272, started: "2024-09-06", finished: "2024-09-08", isbn: "9780063373662" }
 - { title: "The Light Fantastic"                   , author: "Terry Pratchett"              , genre: "Fiction"   , pages: 272, started: "2024-10-15", finished: "2024-10-18", isbn: "9780063373679" }
 # 2025
-- { title: "The Shadow of the Gods"                , author: "John Gwynne"                  , genre: "Fiction"   , pages: 528, started: "2024-12-24", finished: "xxxxxxxxxx", isbn: "9780316539883" }
-# Pending
-- { title: "Effective Modern C++"                  , author: "Scott Meyers"                 , genre: "Technical" , pages: 334, started: "", finished: "", isbn: "9781491903995" }
+- { title: "The Shadow of the Gods"                , author: "John Gwynne"                  , genre: "Fiction"   , pages: 528, started: "2024-12-24", finished: "2025-01-09", isbn: "9780316539883" }
+- { title: "The Hunger of the Gods"                , author: "John Gwynne"                  , genre: "Fiction"   , pages: 672, started: "2025-03-12", finished: "2025-xx-xx", isbn: "9780316539920" }
+# In The Pipe
+- { title: "Effective Modern C++"                  , author: "Scott Meyers"                 , genre: "Technical" , pages: 334, started: "2025-xx-xx", finished: "2025-xx-xx", isbn: "9781491903995" }
