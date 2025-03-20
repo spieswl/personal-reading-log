@@ -38,6 +38,9 @@ readings:
 - { title: "The Light Fantastic"                   , author: "Terry Pratchett"              , genre: "Fiction"   , pages: 272, started: "2024-10-15", finished: "2024-10-18", isbn: "9780063373679" }
 # 2025
 - { title: "The Shadow of the Gods"                , author: "John Gwynne"                  , genre: "Fiction"   , pages: 528, started: "2024-12-24", finished: "2025-01-09", isbn: "9780316539883" }
-- { title: "The Hunger of the Gods"                , author: "John Gwynne"                  , genre: "Fiction"   , pages: 672, started: "2025-03-12", finished: "2025-xx-xx", isbn: "9780316539920" }
+- { title: "The Hunger of the Gods"                , author: "John Gwynne"                  , genre: "Fiction"   , pages: 672, started: "2025-03-12", finished: "2025-03-18", isbn: "9780316539920" }
 # In The Pipe
+- { title: "The Fury of the Gods"                  , author: "John Gwynne"                  , genre: "Fiction"   , pages: 576, started: "2025-xx-xx", finished: "2025-xx-xx", isbn: "9780316539951" }
 - { title: "Effective Modern C++"                  , author: "Scott Meyers"                 , genre: "Technical" , pages: 334, started: "2025-xx-xx", finished: "2025-xx-xx", isbn: "9781491903995" }
+- { title: "Toward Eternity"                       , author: "Anton Hur"                    , genre: "Fiction"}
+- { title: "Dungeon Crawler Carl"                  , author: "Matt Dinniman"                , genre: "Fiction"}
